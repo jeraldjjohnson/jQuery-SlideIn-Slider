@@ -1,0 +1,53 @@
+
+body
+	font-family: Helvetica
+	background:lightgrey
+
+
+.container 
+	display:flex
+	height:250px
+	width:auto
+	margin:0 auto
+	background:white
+	padding:20px
+
+h1
+	cursor:pointer
+	font-weight:100
+	transition: all 0.2s ease-in-out 
+
+	&.selected
+		border-left: 4px solid blue
+		padding-left: 5px
+
+.clear
+	clear:both
+
+.left
+	width:50%
+
+.right
+	width:250px
+	overflow:hidden
+
+
+.display-wrapper
+	position:relative
+
+.info
+	display:block
+
+.display
+	position:absolute
+	left:400px
+	transition: all 0.3s ease-in-out 
+
+	&.active
+		left:0
+
+@media screen and (max-width: 340px)
+	.left
+		width:20%
+	h1
+		font-size: 14px

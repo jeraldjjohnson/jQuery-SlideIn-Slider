@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Custom Slide In Reveal slider developed from scratch</title>
+    <link href="assets/slideInstyles.css" media="screen" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <section class="left">
+        <h1 data-id="1" class="selected">One</h1>
+        <h1 data-id="2">Two</h1>
+        <h1 data-id="3">Three</h1>
+        <h1 data-id="4">Four</h1>
+      </section>
+      <section class="right">
+        <div class="display-wrapper">
+          <div id="1" class="display active"><img src="assets/images/cover1.jpg"></div>
+          <div id="2" class="display"><img src="assets/images/cover2.jpg"></div>
+          <div id="3" class="display"><img src="assets/images/cover3.jpg"></div>
+          <div id="4" class="display"><img src="assets/images/cover4.jpg"></div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="info">
+        <p> <strong>Press any number above. </strong></p>
+        <p>This component understands which word you press and automatically adds a color hightlight to the left of the word. </p>
+        <p>Then it will slide in a painting that corresponds with that word. </p>
+        <p>This is built utilizing DRY programming and JADE. </p>
+      </section>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+  </body>
+</html>
